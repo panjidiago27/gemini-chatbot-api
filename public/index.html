@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+        <h1>TechStore Assistant</h1>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">
+        <!-- Sun icon -->
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon icon -->
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </header>
+    
+    <main id="chat-box" class="chat-box">
+      <div class="welcome-message">
+        <h2>Ada yang bisa dibantu?</h2>
+        <p>Saya adalah AI Support TechStore. Tanya apa saja seputar rekomendasi laptop, PC, atau aksesoris!</p>
+      </div>
+    </main>
+    
+    <footer class="app-footer">
+      <form id="chat-form">
+        <div class="input-wrapper">
+          <input type="text" id="user-input" placeholder="Tanya seputar laptop atau PC..." autocomplete="off" required />
+          <button type="submit" id="send-btn" title="Send message">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
